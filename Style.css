@@ -1,7 +1,10 @@
 body{
     background-color: blue;
 }
-.box{
+#box{
     color: white;
     display: block;
+
+
+
 }
