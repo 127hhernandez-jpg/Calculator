@@ -1,61 +1,138 @@
-body{
+body {
+    margin: 0;
+}
+#calculator {
+    position: relative;
+    width: 495px;
+    height: 398px;
     background-color: blue;
 }
-.display{
-    width: 300px;
-    height: 300px;
+#display {
+    position: absolute;
+    width: 493px;
+    height: 145px;
+    background-color: white;
+    border: 1px solid gray;
 }
-.calculator{
+#input {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 480px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+}
+#answer {
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    font-size: 20px;
+    }
+button:hover {
+    background-color: lightgray;
+}
+button{
+    position: absolute;
+    width: 40px;
+    height: 29px;
+    font-size: 13px;
+    color: black;
     display: flex;
-    width: 100%;
-    height: 150px;
+    align-items: center;
+    justify-content: center;
 }
-.buttons{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
-}
-#open{
-
-}
-.numbers{
+.numbers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
 }
 #nine{
-    left:364px;
-    top: 304px;
+    left: 424px;
+    top: 264px;
 }
 #eight{
-    left:344px;
-    top:304px;
+    left: 364px;
+    top: 264px;
 }
 #seven{
-    left: 324px;
-    top: 304px;
+    left: 304px;
+    top: 264px;
 }
 #six{
-    left:364px;
-    top: 324px;
+    left:424px;
+    top: 314px;
 }
 #five{
-    left: 324px;
-    top: 324px;
+    left: 364px;
+    top: 314px;
 }
 #four{
-    left: 324px;
-    top: 324px;
+    left: 304px;
+    top: 314px;
 }
 #three{
-    left: 364px;
-    top: 343px;
+    left: 424px;
+    top: 363px;
 }
 #two{
-    left: 344px;
-    top: 343px;
+    left: 364px;
+    top: 363px;
 }
 #one {
-    left: 324px;
-    top: 343px;
+    left: 304px;
+    top: 363px;
+}
+#up{
+    left: 304px;
+    top: 214px;
+}
+#down{
+    left: 364px;
+    top: 214px;
+}
+#decimal{
+    left: 424px;
+    top: 214px;
+}
+#plus{
+    left: 24px;
+    top: 264px;
+}
+#subtract{
+    left: 84px;
+    top: 264px;
+}
+#mod{
+    left: 144px;
+    top: 264px;
+}
+#power{
+    left: 24px;
+    top: 214px;
+}
+#multiply{
+    left: 84px;
+    top: 214px;
+}
+#divide{
+    left: 144px;
+    top: 214px;
+}
+#open{
+    left: 24px;
+    top: 304px;
+}
+#close{
+    left: 84px;
+    top: 304px;
+}
+#zero{
+    left: 144px;
+    top: 304px;
+}
+#enter{
+    left: -400px;
+    top: 214px;
+    padding: 12px 48px;
 }
