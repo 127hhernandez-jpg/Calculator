@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Humberto's Calculator</title>
-  <script src = "index.js"> </script>
-  <Link rel = "StyleSheet" href="Style.css">
+    <Link rel = "StyleSheet" href="Style.css">
+    <script src = "index.js">defer</script>
 </head>
 <body>
 <div id = "calculator">
     <div id = "display">
-        <input type = "text">
+        <input type = "text" id = "input">
         <div id = "answer">
-            <button id = "enter">Enter</button>
         </div>
     </div>
     <div class = "buttons">
-        <button id = "power">**</button>
+        <button onclick = "power()" id = "power">**</button>
         <button id = "multiply">*</button>
         <button id = "divide">/</button>
         <button id = "plus">+</button>
@@ -36,6 +35,7 @@
         <button id = "three">3</button>
         <button id = "two">2</button>
         <button id = "one">1</button>
+        <button id = "enter">Enter</button>
     </div>
 </div>
 </body>

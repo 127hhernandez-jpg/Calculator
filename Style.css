@@ -132,7 +132,8 @@ button{
     top: 304px;
 }
 #enter{
-    left: -400px;
-    top: 214px;
-    padding: 12px 48px;
+    left: 24px;
+    top: 363px;
+    width: 100px;
+    height: 29px;
 }
