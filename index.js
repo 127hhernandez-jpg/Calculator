@@ -6,9 +6,7 @@ let historyList = JSON.parse(localStorage.getItem("calculatorHistory"));
 if (historyList === null) {
     historyList = [];
 }
-
 let historyIndex = historyList.length;
-
 function addInput(value) {
 
     let start = input.selectionStart;
@@ -51,10 +49,11 @@ function calculate() {
         }
         answer.innerHTML = result;
         return result;
-        catch {
-
-        }
     }
+        catch (error) {
+        answer.innerHTML = "";
+        return null;
+        }
 }
 function saveEquation() {
 
@@ -78,14 +77,11 @@ function saveEquation() {
     historyIndex = historyList.length;
 }
 function clearAll() {
-
     input.value = "";
     answer.innerHTML = "";
-
     historyIndex = historyList.length;
 }
 function deleteLast() {
-
     let start = input.selectionStart;
     let end = input.selectionEnd;
 
@@ -103,42 +99,27 @@ function deleteLast() {
 
         input.setSelectionRange(start, start);
     }
-
     calculate();
 }
-
 function previousEquation() {
-
     if (historyIndex > 0) {
-
         historyIndex--;
-
         input.value = historyList[historyIndex].equation;
-
         answer.innerHTML = historyList[historyIndex].answer;
     }
 }
-
-
 function nextEquation() {
-
     if (historyIndex < historyList.length - 1) {
-
         historyIndex++;
-
         input.value = historyList[historyIndex].equation;
-
         answer.innerHTML = historyList[historyIndex].answer;
 
     } else {
-
         historyIndex = historyList.length;
-
         input.value = "";
         answer.innerHTML = "";
     }
 }
-
 document.getElementById("zero").addEventListener("click", function() {
     addInput("0");
 });
@@ -230,41 +211,29 @@ document.getElementById("down").addEventListener("click", function() {
 document.addEventListener("keydown", function(event) {
 
     if (event.key === "Enter" || event.key === "=") {
-
         event.preventDefault();
         saveEquation();
     }
-
     if (event.key === "ArrowUp") {
-
         event.preventDefault();
         previousEquation();
     }
-
     if (event.key === "ArrowDown") {
-
         event.preventDefault();
         nextEquation();
     }
-
     if (event.key === "Escape" || event.key === "Delete") {
-
         event.preventDefault();
         clearAll();
     }
-
     if (event.key === "Backspace") {
-
         if (document.activeElement !== input) {
-
             event.preventDefault();
             deleteLast();
         }
     }
 });
 input.addEventListener("input", function() {
-
     historyIndex = historyList.length;
-
     calculate();
 });
