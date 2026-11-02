@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ad4b604-0ab1-4aa1-937a-75c7e79c94e5" name="Changes" comment="Calc">
+      <change beforePath="$USER_HOME$/OneDrive - FRHSD/Desktop/Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/OneDrive - FRHSD/Desktop/Calculator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/OneDrive - FRHSD/Desktop/Calculator/index.html" beforeDir="false" afterPath="$USER_HOME$/OneDrive - FRHSD/Desktop/Calculator/index.html" afterDir="false" />
       <change beforePath="$USER_HOME$/OneDrive - FRHSD/Desktop/Calculator/index.js" beforeDir="false" afterPath="$USER_HOME$/OneDrive - FRHSD/Desktop/Calculator/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/OneDrive - FRHSD/Desktop/Calculator" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "127hhernandez-jpg"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/127hhernandez-jpg/Calculator.git",
+    "accountId": "9c50c545-f6b2-4452-8d52-5867131b15b8"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -33,21 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,6 +84,7 @@
       <workItem from="1792774820158" duration="3531000" />
       <workItem from="1793293248527" duration="3821000" />
       <workItem from="1793637955920" duration="703000" />
+      <workItem from="1793639183104" duration="1171000" />
     </task>
     <task id="LOCAL-00001" summary="Calc">
       <option name="closed" value="true" />
@@ -110,7 +126,23 @@
       <option name="project" value="LOCAL" />
       <updated>1793297092060</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Calc">
+      <option name="closed" value="true" />
+      <created>1793639230948</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1793639230948</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Calc">
+      <option name="closed" value="true" />
+      <created>1793639280069</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1793639280069</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,51 +1,10 @@
 console.log('Happy developing ✨')
+const input = document.getElementById("input");
+const answer = document.getElementById("answer");
 const stored = sessionStorage.getItem("stored");
 
 let equations;
-
-if (stored) {
-    equations = JSON.parse(stored);
-} else {
-    equations = [];
-    sessionStorage.setItem("stored", JSON.stringify(equations));
-}
-
 let historyIndex = equations.length;
-function addInput(value) {
-    input.value += value;
-    calculate();
-    input.focus();
-}
-function calculate() {
-    try {
-        if (input.value != "") {
-            let result = eval(input.value);
-
-            if (Number.isFinite(result)) {
-                answer.innerHTML = result;
-                return true;
-            } else {
-                answer.innerHTML = "Error";
-                return false;
-            }
-        } else {
-            answer.innerHTML = "";
-            return false;
-        }
-    } catch (error) {
-        answer.innerHTML = "Error";
-        return false;
-    }
-}
-function saveEquation() {
-    if (calculate() === true) {
-        equations.push(input.value);
-
-        sessionStorage.setItem("stored", JSON.stringify(equations));
-
-        historyIndex = equations.length;
-    }
-}
 
 document.getElementById("zero").addEventListener("click", function() {
     addInput("0");
